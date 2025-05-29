@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "evo_weapons",
+	"version": "${version}",
+	"name": "Evo_Weapons",
+	"description": "This is a weapon mod for Evo Events",
+	"authors": [
+		"Alive"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/evo_weapons/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.alive.evo_weapons.Evo_Weapons"
+		],
+		"client": [
+			"net.alive.evo_weapons.Evo_WeaponsClient"
+		],
+		"fabric-datagen": [
+			"net.alive.evo_weapons.Evo_WeaponsDataGenerator"
+		]
+	},
+	"mixins": [
+		"evo_weapons.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
